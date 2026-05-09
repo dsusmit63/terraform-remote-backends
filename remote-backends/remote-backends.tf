@@ -5,8 +5,7 @@ resource "aws_s3_bucket" "myremotes3bucket" {
     Name = "mys3bucket09052026"
   }
 }
-
-# Dynamo DB
+# Dynamo DB to handle state locking
 resource "aws_dynamodb_table" "myremotedynamodbtable" {
   name = "myremotedynamodbtable090526"
   billing_mode = "PAY_PER_REQUEST"
